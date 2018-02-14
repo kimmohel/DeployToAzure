@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= 'Goalscorers of HPK offensive'
+  ul
+    each scorer in scorers
+      li= scorer.number + ': ' + scorer.goals
+

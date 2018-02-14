@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= 'Players and lineups of HPK'
+  ul
+    each player in players
+      li= player.number + ', ' + player.player + ', ' + player.nation + ', ' + player.position
+
